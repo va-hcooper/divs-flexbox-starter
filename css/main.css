@@ -110,32 +110,55 @@ body {
   background: black;
 }
 
-.wrapper {
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto 10px 0;
 }
 
-.div-1, .div-2, .div-3 {
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: lightgray;
+    padding: 0;
+}
+
+main {
+    font-size: 1.5em;
+    color: lightgray;
+    margin: 10px auto;
+    padding: 10px 0 15px 0;
+    border-bottom: 1px solid gray;
+}
+
+span {
+    font-weight: bold;
+}
+
+.flex-items {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: lightgray;
   line-height: 1.5em;
   font-size: 1.25em;
-  height: auto;
+  height: 200px;
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.div-1, .div-2 {
+#div-1, #div-2 {
     border-right: 1px solid gray;
     padding-right: 50px;
 }
 
-
-
+footer {
+    border-top: 1px solid gray;
+}
 
 /* ==========================================================================
    Helper classes
